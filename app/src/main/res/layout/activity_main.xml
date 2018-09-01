@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="Welcome to Trivial Trivia! Questions will range from multiple choice, short response, and multi pick! Let's get started!"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+
+        <EditText
+            android:id="@+id/name_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:inputType="textCapWords"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:text="1. The lyrics to what patriotic song were inspired by the view from the top of Pikes Peak?"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/question_one_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Answer"
+            android:inputType="textCapWords"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textSize="13sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp"
+            android:text="2.The company behind the popular Valentine's Day treats Sweethearts-brand Conversation Hearts also makes which of these confections?"
+            android:textAlignment="center" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A. Starburst Fruit Chews"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/question_two_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B. Necco Wafers	"
+                android:textSize="13sp"
+                android:onClick="questionTwoClicked"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C. Smarties	"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D. Sno-Caps	"
+                android:textSize="13sp" />
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp"
+            android:text="3.Choose all the examples or types of carbohydrates."
+            android:textAlignment="center" />
+
+        <CheckBox
+            android:id="@+id/question_three_first_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Galactose" />
+
+        <CheckBox
+            android:id="@+id/question_three_second_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fructose" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Surcrose" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maltose" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp"
+            android:text="4. What video game was first introduced in late 2000 with a promotional blitz focused on a question mark made out of part of its logo?					"
+            android:textAlignment="center" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/question_four_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A. Sony Playstation 2"
+                android:textSize="13sp"
+                android:onClick="questionFourClicked"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B. Nintendo Game Cube"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C. Sega Dreamcast"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D. Microsoft Xbox"
+                android:textSize="13sp" />
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp"
+            android:text="5. What type of cloud can form a funnel, giving birth to a tornado?"
+            android:textAlignment="center" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/question_five_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A. cumulonimbus"
+                android:textSize="13sp"
+                android:onClick="questionFiveClicked"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B. status"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C. nimbus"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D. altocumulus"
+                android:textSize="13sp" />
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp"
+            android:text="6. Cochineal, a scarlet-colored dye, was originally made from:"
+            android:textAlignment="center" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A. lamb's blood"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B. ground seashells"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/question_six_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C. crushed insects"
+                android:textSize="13sp"
+                android:onClick="questionSixClicked"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D. maple leaves"
+                android:textSize="13sp" />
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp"
+            android:text="7. Who was the first American president to appear on the cover of People magazine?"
+            android:textAlignment="center" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A. John F. Kennedy"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B. Jimmy Carter"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C. Richard Nixon"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/question_seven_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D. Gerald Ford"
+                android:textSize="13sp"
+                android:onClick="questionSevenClicked"/>
+        </RadioGroup>
+
+
+    </LinearLayout>
+</ScrollView>
